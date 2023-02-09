@@ -12,8 +12,9 @@
      });
 
     item.addEventListener('click', function () {
-        this.nextElementSibling.classList.toggle('hidden');
-        this.previousElementSibling.classList.add('hidden');
+        const contentBoxes = document.querySelector('#' + this.dataset.tab);  
+        contentBoxes.classList.remove('hidden');
     });
 
+    
  });
