@@ -12,9 +12,8 @@
      });
 
     item.addEventListener('click', function () {
-        const contentBoxes = document.querySelector('#' + this.dataset.tab);  
-        contentBoxes.classList.remove('hidden');
+        this.nextElementSibling.classList.remove('hidden');
+        this.previousElementSibling.classList.add('hidden');
     });
 
-    
  });
